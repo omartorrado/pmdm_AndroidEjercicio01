@@ -10,10 +10,17 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Calendar;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
     TextView cuadroTexto;
+    int i=1;
+    Date horaInicial;
+    Date horaFinal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +71,17 @@ public class MainActivity extends AppCompatActivity {
 
     //Metodo usado con el onClick (en el XML) del boton send de content_main.xml
     public void miMetodo(View v){
-        cuadroTexto = (TextView)findViewById(R.id.miTexto);
-        cuadroTexto.setText(R.string.miMensaje);
+        if(i==1) {
+            horaInicial=Calendar.getInstance().getTime();
+            cuadroTexto = (TextView) findViewById(R.id.miTexto);
+            cuadroTexto.setText(R.string.miMensaje);
+        }else if(i<5){
+            Toast.makeText(this, "Es la "+i+"ª vez que pulsas el boton", Toast.LENGTH_SHORT).show();
+        }else{
+            horaFinal=Calendar.getInstance().getTime();
+            long dif=(horaFinal.getTime()-horaInicial.getTime())/1000;
+            Toast.makeText(this, "¿Tu te aburres no? Dejalo ya llevas "+dif+"s", Toast.LENGTH_SHORT).show();
+        }
+        i++;
     }
 }
