@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PMDM_Exercicio01</string>
+    <string name="action_settings">Opcions</string>
+    <string name="onPause">Has pasado polo onPause()</string>
+    <string name="miTexto">Boas mundo</string>
+    <string name="miBoton">meu boton</string>
+    <string name="to">Pra:</string>
+    <string name="subject">Tema:</string>
+    <string name="message">Escribe aqui el contenido del mensaje</string>
+    <string name="send">Mandalo</string>
+    <string name="miMensaje">Has pulsado el boton</string>
+</resources>

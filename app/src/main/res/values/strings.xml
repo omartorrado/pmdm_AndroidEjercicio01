@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PMDM_Practice01</string>
+    <string name="action_settings">Settings</string>
+    <string name="onPause">You were onPause()</string>
+    <string name="miTexto">Hello world</string>
+    <string name="miBoton">my Button</string>
+    <string name="to">To:</string>
+    <string name="subject">Subject:</string>
+    <string name="message">Escribe aqui el contenido del mensaje</string>
+    <string name="send">Send</string>
+    <string name="miMensaje">Has pulsado el boton</string>
+</resources>
